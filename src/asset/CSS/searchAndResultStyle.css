@@ -1,0 +1,88 @@
+#searchResultContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#searchResults {
+    /* padding: 1em; */
+    width: 95%;
+    height: 90%;
+    display: grid;
+    grid-template: repeat(4, 24%) / repeat(5, 19.7%);
+    column-gap: .31%;
+    row-gap: 1.33%;
+}
+
+.searchResultItem {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.searchItemOverlay {
+    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, rgba(0, 0, 0, .9) 40%, rgba(255, 255, 255, 0) 97%);
+    justify-content: end;
+    width: 100%;
+}
+
+.searchResultText {
+    /* color: white; */
+    text-align: center;
+}
+
+.searchedEventCityDate {
+    padding: 0 6%
+}
+
+.saveSearchEvbentBtn {
+    z-index: 10;
+}
+
+input {
+    width:80%;
+    margin: 5px;    
+}
+input[type=radio] {
+    width: auto;
+}
+/* ::placeholder {
+    color: lightgray;
+} */
+
+
+#previousAPIPage,
+#nextAPIPage {
+    font-size:400%;
+    /* color:white; */
+    background-color: grey;
+    cursor: pointer;
+}
+#previousAPIpage {
+    left:0
+}
+#nextAPIpage {
+    right:0
+}
+
+
+
+@media only screen and (max-width : 900px){
+    #searchResults{
+        display: flex;
+        flex-direction: column;
+        height:90vh;
+        overflow-y: scroll;
+    }
+}

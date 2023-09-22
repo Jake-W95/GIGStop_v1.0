@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "firebase": "^10.1.0",
+    "https-browserify": "^1.0.0",
+    "moment": "^2.29.4",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.2",
+    "util": "^0.12.5"
+  },
+  "name": "gigstop",
+  "description": "## Currently built for desktop only",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jake-W95/GIGStop.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

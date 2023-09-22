@@ -1,0 +1,105 @@
+<div class="mobileSite" style="background-image: url(../src/asset/IMAGES/DJ_Bckg.jpg);
+background-size: cover;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-position: center;">
+<header class="row justify-content-around" style="height:10vh; background: rgba(0,0,0,.5)">
+<img src="../src/asset/IMAGES/GIGstop_logo.png" style="height:100%" />
+</header>
+
+<main>
+<!-- /////////////////Homepage Search Area -->
+<section class="col" id="homeSearchSection">
+<form class="sectionBody" id="searchForm" style="background-color: rgba(0,0,0,0.6)">
+<!-- Main search -->
+<input type="text" id="mainSearchIn" placeholder="search by artist or keyword" style="height:2em">
+<!-- Location search -->
+<input type="text" id="locationSearchIn" placeholder="Refine Location" style="height: 2em">
+<!-- Date filter -->
+<input id="start-date" type="datetime-local" />
+<!-- Show genres -->
+<input type="button" value="Genres" id="showGenres">
+
+<sidebar class="col hide" id="genreFilterMobile">
+<h5 style="margin-bottom: 2em; text-align:center">Filter Genres</h5>
+<div class="genreItem">
+<label for="Pop">Pop</label>
+<input type="radio" id="Pop" name="genre" value="KnvZfZ7vAev">
+</div>
+
+<div class="genreItem">
+<label for="Rock">Rock</label>
+<input type="radio" id="Rock" name="genre" value="KnvZfZ7vAeA">
+</div>
+
+<div class="genreItem">
+<label for="Metal">Metal</label>
+<input type="radio" id="Metal" name="genre" value="KnvZfZ7vAvt">
+</div>
+
+<div class="genreItem">
+<label for="Electronic">Electronic</label>
+<input type="radio" id="Electronic" name="genre" value="KnvZfZ7vAvF">
+</div>
+
+<div class="genreItem">
+<label for="Folk">Folk</label>
+<input type="radio" id="Folk" name="genre" value="KnvZfZ7vAva">
+</div>
+
+<div class="genreItem">
+<label for="Reggae">Reggae</label>
+<input type="radio" id="Reggae" name="genre" value="KnvZfZ7vAed">
+</div>
+
+<div class="genreItem">
+<label for="RnB">R&B</label>
+<input type="radio" id="RnB" name="genre" value="KnvZfZ7vAee">
+</div>
+
+<div class="genreItem">
+<label for="Hip-Hop">Hip-Hop</label>
+<input type="radio" id="Hip-Hop" name="genre" value="KnvZfZ7vAv1">
+</div>
+
+<div class="genreItem">
+<label for="Classical">Classical</label>
+<input type="radio" id="Classical" name="genre" value="KnvZfZ7vAeJ">
+</div>
+
+<div class="genreItem">
+<label for="Jazz">Jazz </label>
+<input type="radio" id="Jazz" name="genre" value="KnvZfZ7vAvE">
+</div>
+<div class="genreItem">
+
+<label for="Country">Country</label>
+<input type="radio" id="Country" name="genre" value="KnvZfZ7vAv6">
+</div>
+
+<!-- <div class="genreItem">
+<label for="World">World</label>
+<input type="radio" id="World" name="genre" value="World">
+</div> -->
+
+</sidebar>
+<input type="submit" value="Search" class="formSubmit" style="
+grid-column: 1/2;
+margin:5%
+">
+
+<!-- Genre filter -->
+
+</form>
+</section>
+<h1 class="sectionHeader">Events Happening Soon</h1>
+<section class="sectionBody suggestedEvents">
+</section>
+
+<h1 class="sectionHeader">Saved Events</h1>
+<section class="savedItemSection sectionBody">
+<section class="sectionBody savedItems"></section>
+</section>
+</main>
+
+</div>

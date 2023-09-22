@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIGstop</title>
+
+  <link rel="stylesheet" href="../src/asset/CSS/style.css">
+  <link rel="stylesheet" href="../src/asset/CSS/suggestedStyles.css">
+  <link rel="stylesheet" href="../src/asset/CSS/newsStyle.css">
+  <link rel="stylesheet" href="../src/asset/CSS/searchAndResultStyle.css">
+  <link rel="stylesheet" href="../src/asset/CSS/modalStyles.css">
+  <link rel="stylesheet" href="../src/asset/CSS/favourites.css">
+  <link rel="stylesheet" href="../src/asset/CSS/mediaQueries.css">
+  <link rel="stylesheet" href="../src/asset/CSS/signUpStyle.css">
+</head>
+
+<body>
+  <div class="desktopSite" style="
+  background-image: url(../src/asset/IMAGES/Festival-Crowd.jpg); 
+                                padding: .3em
+                                ">
+    <!-- create navbar -->
+    <header class="row justify-content-between align-items-end">
+      <img src="../src/asset/IMAGES/GIGstop_logo.png" style="
+      height:74px;
+      width:auto;
+      aspect-ratio: contain;
+      margin-left:5%" />
+      <!-- Login -->
+      <div id="authButtons">
+      </div>
+    </header>
+    <main style="
+  display: grid; 
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(2, 50%);
+  height: 90vh ">
+      <!-- Search Area -->
+      <section class="col" id="homeSearchSection">
+        <h1 class="sectionHeader">Search</h1>
+        <form class="sectionBody" id="searchForm" style="
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: rgba(0,0,0,0.35);
+        ">
+          <!-- Main search -->
+          <div class="col">
+            <input type="text" id="mainSearchIn" placeholder="search by artist or keyword" style="height:2em">
+            <div class="row justify-content-center" style="height: 2em;">
+              <label for="artistsOnly">Show artists only?</label>
+              <input type="checkbox" name="artistsOnly" id="artistsOnlyCheckBox" value="true" style="width: 30%; background-color: red;">
+            </div>
+          </div>
+          <!-- Location search -->
+          <input type="text" id="locationSearchIn" placeholder="Refine Location" style="height: 2em">
+          <!-- Date filter -->
+          <input id="start-date" type="datetime-local" />
+          <button type="submit" id="mainSearchSubmit" style="
+        grid-column: 1/2;
+        margin:5%
+        ">Search</button>
+          <!-- Genre filter -->
+          <sidebar id="genreFilter" style="
+        grid-row: 1 / 4;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        ">
+            <h5 style="margin-bottom: 2em; text-align:center">Filter Genres</h5>
+          </sidebar>
+        </form>
+
+      </section>
+      <!-- Suggested Area  -->
+      <section class="col suggestedSection">
+        <h1 class="sectionHeader">Suggested</h1>
+        <section class=" suggestedEvents"></section>
+      </section>
+      <!-- Favourites Area -->
+      <section class="favouritesSection">
+        <h1 class="sectionHeader">Favourites </h1>
+        <div id="favouriteSelectors" style="display: flex;">
+          <button class="favSelectorBtn" id="favArtistBtn">Artists</button>
+          <button class="favSelectorBtn" id="favVenueBtn">Venues</button>
+          <!-- <button class="favSelectorBtn"></button> -->
+        </div>
+        <section class="sectionBody savedItems favouriteGrid"></section>
+      </section>
+      <!-- News Area  -->
+      <section>
+        <h1 class="sectionHeader">Music News</h1>
+        <section class="sectionBody" id="newsSection" style="
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      "></section>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="./bundle.js"></script>
+
+</body>
+
+
+
+
+
+</html>

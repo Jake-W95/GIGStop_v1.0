@@ -1,0 +1,17 @@
+#authFormDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: -35%;
+    bottom: 0;
+    margin: auto;
+    width: 45%;
+    height: 35%;
+    background-color: rgb(102, 53, 53);
+    padding: 1em;
+}
+#authFormDiv input{
+    width: 50%
+}

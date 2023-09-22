@@ -1,0 +1,106 @@
+.modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70vw;
+    height: 55vh;
+    background-color: rgba(26, 26, 26, .96);
+    color: white
+}
+
+
+
+.modalDetails {
+    width: 50%;
+    box-sizing: border-box;
+    font-size: larger;
+}
+
+.modalText {
+    padding: 7%;
+}
+
+.modalEventName,
+.modalEventVenue {
+    font-style: oblique;
+    padding-bottom: .7rem;
+}
+
+.modalBtnSection {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+    padding: .2em;
+    gap: .4em;
+}
+
+.modalBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modalBtn>button {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+}
+
+.modalMap {
+    height: 100%;
+    width: 50%
+}
+
+/* Favourite Modal section */
+.modalBackdrop {
+    width : 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+}
+.favModal {
+    /* display: grid; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 75% 30%;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+    "favText favImage"
+    "favButtons favButtons"; */
+}
+.favModalText {
+    text-align: center;
+    min-height: 20%;
+}
+.favModalImage {
+    height:50%;
+}
+.favModalBtnSection {
+    grid-area: favButtons;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+.modalBtnStock {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: .7em;
+}
+
+@media only screen and (max-width: 900px) {
+    .modal .row {
+        flex-direction: column;
+    }
+    .modalDetails  {
+        width: 100%;
+    }
+    .modalMap {
+        
+        width: 100%
+    }
+}

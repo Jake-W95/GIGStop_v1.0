@@ -1,0 +1,112 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color:white
+}
+body {
+    height:100vh;
+    width:100vw;
+    margin: 0;
+    /* background-color: aqua; */
+    /* padding:1em */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;    
+}
+
+.sectionHeader {
+    height: 10%;
+    background-color: black;
+}
+.sectionBody {
+    height: 90%;
+}
+.filterHeaders {
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.hide {
+    display: none;
+}
+
+.genreItem {
+    display: flex;
+    justify-content: space-between;
+}
+input,
+button {
+    background-color: rgb(36, 36, 36);
+    font-weight:600;
+    color:lightgray
+}
+.confirmSave{
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    background: rgba(0,175, 255,.5);
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 3%;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+/* Mobile Version */
+@media only screen and (max-width:900px){
+    .desktopSite{
+        display: none;
+    }
+    .mobileSite{
+        display:block;
+    };
+    #genreFilter {
+        position: absolute;
+    }
+
+} 
+
+/* Desktop Version */
+@media only screen and (min-width:901px){
+    .desktopSite{
+        display: block;
+    }
+    .mobileSite{
+        display: none
+    };
+
+    
+} 

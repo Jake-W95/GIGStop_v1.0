@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Search Event Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/search.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Local Event App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mainSearch.html">By Keyword</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Upcoming </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favourites</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Past Events</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-25 d-inline">
+          <form action="#" id="login">
+            <input type="text" placeholder="Login" />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>  
+    <main class="row justify-content-around">
+      
+      
+     
+      <aside class="col-3" id="filters">
+        <h4>Filters</h4>
+        <div>Events from organisers to follow</div>
+        <div>Search for online events</div>
+        <br />
+        <div>
+          <label> Start Date</label><input id="start-date" type="datetime-local" />
+        </div>
+        <div><label>Price</label><input type="range" min="0" max="1000" /></div>
+        <br />
+        <div>Category</div>
+        <div>Format</div>
+        <br />
+        <div>Language</div>
+      </aside>
+      <section class="col-8" id="search-container">
+        <div class="search-area">
+          <form id="searchForm">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search for an event"
+              aria-labelledby="form-heading"
+            />
+          <button id="search-button" type="submit" aria-label="submit search">Search</button>
+        </form>
+        </div>
+
+        <section id="search-results" class="row">
+          
+        </section>
+      </section>
+ 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="../JS/citySearch.js"></script>
+    <!-- <script src="../JS/indexScript.js"></script> -->
+
+    <!-- <script src="asset/ticketmaster.js"></script> -->
+  </body>
+</html>
