@@ -8,5 +8,5 @@ module.exports = {
         path: path.resolve(__dirname, 'pub'),
         filename: 'bundle.js'
     },
-    watch: true
+    watch: false
 }
